@@ -1,0 +1,135 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #ff6060;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 60vh;
+    background: url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 22px;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 50px;
+    background: #1f3b57;
+    color: white;
+}
+
+.about-text {
+    padding-right: 30px;
+}
+
+.about-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* OFFER / WHY US GRID */
+.grid-offer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 300px;
+}
+
+.offer {
+    background: #f8d56a;
+    padding: 60px;
+}
+
+.offer h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.offer button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background: #1f3b57;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.why-us {
+    background: #3cbba4;
+    padding: 60px;
+}
+
+.why-us h2 {
+    margin-bottom: 20px;
+}
+
+.why-us ul {
+    list-style: none;
+}
+
+.why-us li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .about-section,
+    .grid-offer {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
